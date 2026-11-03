@@ -1,3 +1,21 @@
+> [!IMPORTANT]
+> **本 fork 已构建 iOS / iPadOS（兼容 iPhone）版 Cube Remote，但目前无法上传 TestFlight。**
+>
+> 原因：没有付费 Apple Developer Program 账号；免费 Apple ID 的 Personal Team 只能做 7 天真机调试，不能创建 App Store Connect 记录，也不能上传 TestFlight。
+>
+> 新增 / 改动路径：
+> - [`ios/`](ios/) — SwiftUI App、`CubeRemoteCore` SwiftPM 包、已生成的 `CubeRemote.xcodeproj`
+> - [`docs/ios.md`](docs/ios.md) — 构建、Simulator / 真机运行、能力边界
+> - [`docs/testflight.md`](docs/testflight.md) — 付费账号就绪后的 archive / upload 流程
+> - `web_auth.py`、`tests/test_web_auth.py` — Host 白名单与可选配对令牌
+> - `requirements.txt`、`requirements-dev.txt`、`pyproject.toml` — 依赖清单
+>
+> 分支：[`feat/ios-hardening`](https://github.com/KNGTNPT/CubeSetlistManager/tree/feat/ios-hardening)；详细差异见文末[「本 fork 的改动」](#本-fork-的改动kngtnpt)。
+>
+> 以下为原作者 README 原文（未改动）。
+
+---
+
 <div align="center">
 
 <img src="docs/logo.png" width="128" alt="Cube Setlist Manager Logo"/>
